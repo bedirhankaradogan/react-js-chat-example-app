@@ -1,7 +1,14 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
   overflow: hidden;
+}
+
+.box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box
 }
 
 .page {
@@ -16,11 +23,10 @@ body {
   width: 400px;
   max-height: 100%;
   overflow-y: auto;
-  background-color: purple;
+  border-right: 1px solid #dddddd;
 }
 
 .page-content {
   position: relative;
   flex: 1;
-  background-color: pink;
 }
