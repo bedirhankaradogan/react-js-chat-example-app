@@ -26,7 +26,7 @@ export default class ChatList extends Component {
         ]
       },
       {
-        username: 'Robert Downey Jr.',
+        username: 'Tony Stark',
         userAvatar: 'http://www.laineygossip.com/Content/images/articles/rdj-sma-07nov14.jpg',
         isOnline: true,
         messages: [
@@ -48,6 +48,104 @@ export default class ChatList extends Component {
             date: '2018-07-01',
             time: '23:00',
             text: 'Odin kicked my ass!!!',
+            isRead: true,
+            isEdited: false
+          }
+        ]
+      },
+      {
+        username: 'Bruce Wayne',
+        userAvatar: 'https://cdn.mos.cms.futurecdn.net/2sDGvXSwDRvrJqq9YN5oc4-480-80.jpg',
+        isOnline: false,
+        messages: [
+          {
+            date: '2018-07-01',
+            time: '23:00',
+            text: 'I\'m Batman',
+            isRead: false,
+            isEdited: false
+          }
+        ]
+      },
+      {
+        username: 'Clark Kent',
+        userAvatar: 'https://cdn.movieweb.com/img.news.tops/NEHlYyLvWH6wLN_2_b/Justice-League-Movie-Superman-Comic-Book-Adaption.jpg',
+        isOnline: true,
+        messages: [
+          {
+            date: '2018-07-01',
+            time: '23:00',
+            text: 'I think Marvel is overrated???',
+            isRead: true,
+            isEdited: false
+          }
+        ]
+      },
+      {
+        username: 'Clark Kent',
+        userAvatar: 'https://cdn.movieweb.com/img.news.tops/NEHlYyLvWH6wLN_2_b/Justice-League-Movie-Superman-Comic-Book-Adaption.jpg',
+        isOnline: true,
+        messages: [
+          {
+            date: '2018-07-01',
+            time: '23:00',
+            text: 'I think Marvel is overrated???',
+            isRead: true,
+            isEdited: false
+          }
+        ]
+      },
+      {
+        username: 'Clark Kent',
+        userAvatar: 'https://cdn.movieweb.com/img.news.tops/NEHlYyLvWH6wLN_2_b/Justice-League-Movie-Superman-Comic-Book-Adaption.jpg',
+        isOnline: true,
+        messages: [
+          {
+            date: '2018-07-01',
+            time: '23:00',
+            text: 'I think Marvel is overrated???',
+            isRead: true,
+            isEdited: false
+          }
+        ]
+      },
+      {
+        username: 'Clark Kent',
+        userAvatar: 'https://cdn.movieweb.com/img.news.tops/NEHlYyLvWH6wLN_2_b/Justice-League-Movie-Superman-Comic-Book-Adaption.jpg',
+        isOnline: true,
+        messages: [
+          {
+            date: '2018-07-01',
+            time: '23:00',
+            text: 'I think Marvel is overrated???',
+            isRead: true,
+            isEdited: false
+          }
+        ]
+      },
+      {
+        username: 'Clark Kent',
+        userAvatar: 'https://cdn.movieweb.com/img.news.tops/NEHlYyLvWH6wLN_2_b/Justice-League-Movie-Superman-Comic-Book-Adaption.jpg',
+        isOnline: true,
+        messages: [
+          {
+            date: '2018-07-01',
+            time: '23:00',
+            text: 'I think Marvel is overrated???',
+            isRead: true,
+            isEdited: false
+          }
+        ]
+      },
+      {
+        username: 'Clark Kent',
+        userAvatar: 'https://cdn.movieweb.com/img.news.tops/NEHlYyLvWH6wLN_2_b/Justice-League-Movie-Superman-Comic-Book-Adaption.jpg',
+        isOnline: true,
+        messages: [
+          {
+            date: '2018-07-01',
+            time: '23:00',
+            text: 'I think Marvel is overrated???',
             isRead: true,
             isEdited: false
           }

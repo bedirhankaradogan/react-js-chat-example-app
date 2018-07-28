@@ -1,0 +1,110 @@
+.chat-detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .chat-detail-header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    border-bottom: 1px solid #f1f1f1;
+  
+    .chat-detail-header-avatar-wrapper {
+      .chat-detail-header-avatar {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #f9f9f9;
+        background-color: #f9f9f9;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  
+    .chat-detail-header-meta-data-wrapper {
+      position: relative;
+      width: calc(100% - 40px);
+      padding-left: 20px;
+
+      .chat-detail-header-meta-data-row {
+        position: relative;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+  
+        &.chat-detail-header-username {
+          color: #000000;
+        }
+    
+        &.chat-detail-header-status {
+          color: #888888;
+        }
+      }
+    }
+  }
+
+  .chat-detail-messages {
+    position: relative;
+    height: calc(100% - 140px);
+    max-height: calc(100% - 140px);
+    overflow-y: auto;
+    background-color: #fafafa;
+  }
+
+  .chat-detail-new-message {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    border-top: 1px solid #f1f1f1;
+
+    .chat-detail-new-message-input-wrapper {
+      position: relative;
+      width: calc(100% - 40px);
+
+      .chat-detail-new-message-input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 16px;
+      }
+    }
+
+    .chat-detail-new-message-submit-wrapper {
+      position: relative;
+      width: 40px;
+
+      .chat-detail-new-message-submit {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        .chat-detail-new-message-submit-icon {
+          font-size: 20px;
+          color: #dddddd;
+        }
+
+        &:hover .chat-detail-new-message-submit-icon {
+          color: #5bc8ac;
+        }
+      }
+    }
+  }
+}

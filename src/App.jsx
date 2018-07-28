@@ -4,8 +4,13 @@ import React, { Component } from 'react';
 import './assets/styles/index.scss';
 // Styles
 
+// Libraries
+import './assets/libraries/fontawesome/css/all.min.css';
+// Libraries
+
 // Components
 import ChatList from './components/chat/list/ChatList.jsx';
+import ChatDetail from './components/chat/detail/ChatDetail.jsx';
 // Components
 
 class App extends Component {
@@ -14,11 +19,11 @@ class App extends Component {
       <div className={'page'}>
 
         <div className={'page-left-bar box-sizing'}>
-          <ChatList />
+          <ChatList/>
         </div>
 
         <div className={'page-content'}>
-          content
+          <ChatDetail/>
         </div>
         
       </div>
