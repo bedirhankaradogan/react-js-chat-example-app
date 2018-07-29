@@ -12,9 +12,8 @@ export default class MessageListItem extends Component {
       time,
       text,
       isSenderMe,
-      isRead,
-      isEdited
-    } = this.props.data;
+      isRead
+    } = this.props;
     const bubbleClassName = classNames(
       'message-list-item-bubble',
       'box-sizing',

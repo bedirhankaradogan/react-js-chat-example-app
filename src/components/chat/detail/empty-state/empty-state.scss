@@ -1,0 +1,41 @@
+.chat-detail-empty-state {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .chat-detail-empty-state-avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+    border-radius: 100px;
+    border: 1px solid #f9f9f9;
+    background-color: #f9f9f9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .chat-detail-empty-state-text {
+    text-align: center;
+    font-weight: 200;
+
+    &.chat-detail-empty-state-greeting {
+      margin-bottom: 20px;
+      font-size: 30px;
+      color: #888888;
+    }
+
+    &.chat-detail-empty-state-instruction {
+      padding: 10px 20px;
+      background-color: #5bc8ac;
+      border-radius: 20px;
+      color: #ffffff;
+      font-size: 16px;
+    }
+  }
+}

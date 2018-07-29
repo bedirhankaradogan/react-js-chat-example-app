@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import store from './redux/store';
 
 // Styles
 import './assets/styles/index.scss';
@@ -15,15 +16,21 @@ import ChatDetail from './components/chat/detail/ChatDetail.jsx';
 
 class App extends Component {
   render() {
+    const {
+      Chats,
+      User,
+      ActiveUserId
+    } = store.getState();
+
     return (
       <div className={'page'}>
 
         <div className={'page-left-bar box-sizing'}>
-          <ChatList/>
+          <ChatList chats={Chats}/>
         </div>
 
         <div className={'page-content'}>
-          <ChatDetail/>
+          <ChatDetail user={User} activeUserId={ActiveUserId}/>
         </div>
         
       </div>
