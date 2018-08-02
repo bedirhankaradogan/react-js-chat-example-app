@@ -13,18 +13,16 @@
     padding: 20px;
     border-bottom: 1px solid #f1f1f1;
   
-    .chat-detail-header-avatar-wrapper {
-      .chat-detail-header-avatar {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        border: 1px solid #f9f9f9;
-        background-color: #f9f9f9;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
+    .chat-detail-header-avatar {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      border: 1px solid #f9f9f9;
+      background-color: #f9f9f9;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   
     .chat-detail-header-meta-data-wrapper {
@@ -43,11 +41,11 @@
         text-overflow: ellipsis;
         white-space: nowrap;
   
-        &.chat-detail-header-username {
+        &.chat-detail-header-meta-data-row-username {
           color: #000000;
         }
     
-        &.chat-detail-header-status {
+        &.chat-detail-header-meta-data-row-status {
           color: #888888;
         }
       }

@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import _ from 'lodash';
 
-// Styles
-import './chat-list.scss';
-// Styles
-
 // Components
 import ChatListItem from './item/ChatListItem.jsx';
 // Components

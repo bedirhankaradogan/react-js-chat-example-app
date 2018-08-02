@@ -10,7 +10,11 @@
     cursor: pointer;
   }
 
-  .chat-list-item-avatar-wrapper {
+  &.chat-list-item-active {
+    background-color: #f9f9f9;
+  }
+
+  .chat-list-item-avatar-and-status-wrapper {
     position: relative;
 
     .chat-list-item-avatar {

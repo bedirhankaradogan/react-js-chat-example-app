@@ -24,15 +24,12 @@ class App extends Component {
 
     return (
       <div className={'page'}>
-
         <div className={'page-left-bar box-sizing'}>
           <ChatList chats={chats}/>
         </div>
-
         <div className={'page-content'}>
           <ChatDetail user={user} activeUserId={activeUserId}/>
         </div>
-        
       </div>
     );
   }

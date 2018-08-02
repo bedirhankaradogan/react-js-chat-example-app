@@ -8,7 +8,7 @@
     position: relative;
     max-width: 80%;
     padding: 5px 10px;
-    background-color: #5bc8ac;
+    background-color: #bbbbbb;
     border-radius: 3px;
 
     .message-list-item-bubble-arrow {
@@ -21,7 +21,7 @@
         left: -7px;
         border-top: 8px solid transparent;
         border-bottom: 8px solid transparent;
-        border-right: 8px solid #5bc8ac;
+        border-right: 8px solid #bbbbbb;
       }
   
       &.message-list-item-bubble-arrow-right {
@@ -34,7 +34,7 @@
 
     .message-list-item-bubble-row {
       position: relative;
-      font-size: 16px;
+      font-size: 14px;
       color: #ffffff;
       word-break: break-word;
       text-align: left;
@@ -42,6 +42,7 @@
 
     &.message-list-item-bubble-right {
       margin-left: auto;
+      background-color: #5bc8ac;
     }
   }
 }

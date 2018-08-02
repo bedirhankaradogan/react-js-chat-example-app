@@ -5,8 +5,8 @@ import React, {
 import {
   setNewMessageText,
   sendNewMessage
-} from '../../../redux/actions';
-import store from '../../../redux/store';
+} from '../../../redux/actions/index.js';
+import store from '../../../redux/store/index.js';
 
 // Styles
 import './chat-detail.scss';
@@ -70,12 +70,10 @@ export default class ChatDetail extends Component {
           (<EmptyState user={user}/>) :
           (<Fragment>
             <div className={'chat-detail-header box-sizing'}>
-              <div className={'chat-detail-header-avatar-wrapper'}>
-                <div className={'chat-detail-header-avatar box-sizing'} style={{backgroundImage: 'url(' + activeUser.profilePicture + ')'}}></div>
-              </div>
+              <div className={'chat-detail-header-avatar box-sizing'} style={{backgroundImage: 'url(' + activeUser.profilePicture + ')'}}></div>
               <div className={'chat-detail-header-meta-data-wrapper box-sizing'}>
-                <div className={'chat-detail-header-meta-data-row chat-detail-header-username'}>{activeUser.name}</div>
-                <div className={'chat-detail-header-meta-data-row chat-detail-header-status'}>
+                <div className={'chat-detail-header-meta-data-row chat-detail-header-meta-data-row-username'}>{activeUser.name}</div>
+                <div className={'chat-detail-header-meta-data-row chat-detail-header-meta-data-row-status'}>
                   {activeUser.isOnline ? 'online' : 'offline'}
                 </div>
               </div>
