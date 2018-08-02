@@ -34,22 +34,10 @@
 
     .message-list-item-bubble-row {
       position: relative;
-      
-      .message-list-item-bubble-row-text {
-        position: relative;
-        margin-bottom: 5px;
-        font-size: 16px;
-        color: #ffffff;
-        word-break: break-word;
-        text-align: left;
-      }
-
-      .message-list-item-bubble-row-time {
-        position: relative;
-        font-size: 10px;
-        color: #ffffff;
-        text-align: left;
-      }
+      font-size: 16px;
+      color: #ffffff;
+      word-break: break-word;
+      text-align: left;
     }
 
     &.message-list-item-bubble-right {

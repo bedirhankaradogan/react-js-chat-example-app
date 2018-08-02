@@ -1,14 +1,14 @@
 import {combineReducers} from 'redux';
-import Chats from './Chats';
-import Messages from './Messages';
-import User from './User';
-import ActiveUserId from './ActiveUserId';
-import NewMessageText from './NewMessageText';
+import chats from './Chats';
+import messages from './Messages';
+import user from './User';
+import activeUserId from './ActiveUserId';
+import newMessageText from './NewMessageText';
 
 export default combineReducers({
-  Chats,
-  Messages,
-  User,
-  ActiveUserId,
-  NewMessageText
+  chats,
+  messages,
+  user,
+  activeUserId,
+  newMessageText
 });

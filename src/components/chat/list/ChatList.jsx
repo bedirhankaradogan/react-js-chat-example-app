@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import _ from 'lodash';
 
 // Styles
@@ -12,12 +12,7 @@ import ChatListItem from './item/ChatListItem.jsx';
 export default class ChatList extends Component {
   render() {
     const {chats} = this.props;
-    const chatListItems = _.values(chats).map((chat, i) => (<ChatListItem key={chat.userId} {...chat}/>));
 
-    return(
-      <div>
-        {chatListItems}
-      </div>
-    );
+    return _.values(chats).map((chat) => (<ChatListItem key={chat.userId} {...chat}/>));
   }
 }

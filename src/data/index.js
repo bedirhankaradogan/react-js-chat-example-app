@@ -16,14 +16,6 @@ export const getMessages = messagesPerUser => {
   return messages;
 };
 
-export const state = {
-  user: generateUser(),
-  messages: getMessages(10),
-  newMessageText: '',
-  chats,
-  activeUserId: null
-};
-
 export function generateUser() {
   return {
     userId: shortId.generate(),

@@ -17,20 +17,20 @@ import ChatDetail from './components/chat/detail/ChatDetail.jsx';
 class App extends Component {
   render() {
     const {
-      Chats,
-      User,
-      ActiveUserId
+      chats,
+      user,
+      activeUserId
     } = store.getState();
 
     return (
       <div className={'page'}>
 
         <div className={'page-left-bar box-sizing'}>
-          <ChatList chats={Chats}/>
+          <ChatList chats={chats}/>
         </div>
 
         <div className={'page-content'}>
-          <ChatDetail user={User} activeUserId={ActiveUserId}/>
+          <ChatDetail user={user} activeUserId={activeUserId}/>
         </div>
         
       </div>

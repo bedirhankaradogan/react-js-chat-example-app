@@ -1,9 +1,12 @@
-import React, { Component, Fragment } from 'react';
-import store from '../../../redux/store';
+import React, {
+  Component,
+  Fragment
+} from 'react';
 import {
   setNewMessageText,
   sendNewMessage
 } from '../../../redux/actions';
+import store from '../../../redux/store';
 
 // Styles
 import './chat-detail.scss';
@@ -42,12 +45,12 @@ export default class ChatDetail extends Component {
 
   handleNewMessageSubmit() {
     const {
-      NewMessageText,
-      ActiveUserId
+      newMessageText,
+      activeUserId
     } = store.getState();
 
-    if(NewMessageText) {
-      store.dispatch(sendNewMessage(NewMessageText, ActiveUserId));
+    if(newMessageText) {
+      store.dispatch(sendNewMessage(newMessageText, activeUserId));
       store.dispatch(setNewMessageText(''));
     }
   }
@@ -58,51 +61,41 @@ export default class ChatDetail extends Component {
       user,
       activeUserId
     } = this.props;
-    const activeUser = activeUserId !== null && state.Chats[activeUserId];
-    const messages = activeUserId !== null && state.Messages[activeUserId];
+    const activeUser = activeUserId !== null && state.chats[activeUserId];
+    const messages = activeUserId !== null && state.messages[activeUserId];
 
     return(
       <div className={'chat-detail'}>
         {activeUserId === null ? 
-          (<EmptyState user={user}/>)
-          :
-          (
-            <Fragment>
-              <div className={'chat-detail-header box-sizing'}>
-          
-                <div className={'chat-detail-header-avatar-wrapper'}>
-                  <div className={'chat-detail-header-avatar box-sizing'} style={{backgroundImage: 'url(' + activeUser.profilePicture + ')'}}></div>
-                </div>
-
-                <div className={'chat-detail-header-meta-data-wrapper box-sizing'}>
-                  <div className={'chat-detail-header-meta-data-row chat-detail-header-username'}>{activeUser.name}</div>
-                  <div className={'chat-detail-header-meta-data-row chat-detail-header-status'}>
-                    {activeUser.isOnline ?
-                        'online' :
-                        'offline'}
-                  </div>
-                </div>
-
+          (<EmptyState user={user}/>) :
+          (<Fragment>
+            <div className={'chat-detail-header box-sizing'}>
+              <div className={'chat-detail-header-avatar-wrapper'}>
+                <div className={'chat-detail-header-avatar box-sizing'} style={{backgroundImage: 'url(' + activeUser.profilePicture + ')'}}></div>
               </div>
-              
-              <div ref={this.messagesRef} className={'chat-detail-messages'}>
-                <MessageList messages={messages}/>
-              </div>
-
-              <div className={'chat-detail-new-message box-sizing'}>
-                <div className={'chat-detail-new-message-input-wrapper'}>
-                  <input type="text" className={'chat-detail-new-message-input'} placeholder={'Type a message...'} value={state.NewMessageText} onChange={this.handleNewMessageInputChange.bind(this)}/>
-                </div>
-                <div className={'chat-detail-new-message-submit-wrapper'}>
-                  <button className={'chat-detail-new-message-submit'} onClick={this.handleNewMessageSubmit.bind(this)}>
-                    <i className="fas fa-location-arrow chat-detail-new-message-submit-icon"></i>
-                  </button>
+              <div className={'chat-detail-header-meta-data-wrapper box-sizing'}>
+                <div className={'chat-detail-header-meta-data-row chat-detail-header-username'}>{activeUser.name}</div>
+                <div className={'chat-detail-header-meta-data-row chat-detail-header-status'}>
+                  {activeUser.isOnline ? 'online' : 'offline'}
                 </div>
               </div>
-            </Fragment>
-          )
-        }
+            </div>
+            <div ref={this.messagesRef} className={'chat-detail-messages'}>
+              <MessageList messages={messages}/>
+            </div>
+            <div className={'chat-detail-new-message box-sizing'}>
+              <div className={'chat-detail-new-message-input-wrapper'}>
+                <input type="text" className={'chat-detail-new-message-input'} placeholder={'Type a message...'} value={state.newMessageText} onChange={this.handleNewMessageInputChange.bind(this)}/>
+              </div>
+              <div className={'chat-detail-new-message-submit-wrapper'}>
+                <button className={'chat-detail-new-message-submit'} onClick={this.handleNewMessageSubmit.bind(this)}>
+                  <i className="fas fa-location-arrow chat-detail-new-message-submit-icon"></i>
+                </button>
+              </div>
+            </div>
+          </Fragment>)}
       </div>
     );
   }
+
 }

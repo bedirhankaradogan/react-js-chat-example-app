@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import classNames from 'classnames';
 
 // Styles
@@ -8,11 +8,8 @@ import './message-list-item.scss';
 export default class MessageListItem extends Component {
   render() {
     const {
-      date,
-      time,
       text,
-      isSenderMe,
-      isRead
+      isSenderMe
     } = this.props;
     const bubbleClassName = classNames(
       'message-list-item-bubble',
@@ -34,12 +31,7 @@ export default class MessageListItem extends Component {
       <div className={'message-list-item box-sizing'}>
         <div className={bubbleClassName}>
           <div className={arrowClassName}></div>
-          <div className={'message-list-item-bubble-row'}>
-            <div className={'message-list-item-bubble-row-text'}>{text}</div>
-          </div>
-          <div className={'message-list-item-bubble-row'}>
-            <div className={'message-list-item-bubble-row-time'}>{time}</div>
-          </div>
+          <div className={'message-list-item-bubble-row'}>{text}</div>
         </div>
       </div>
     );

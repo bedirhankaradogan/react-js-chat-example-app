@@ -18,11 +18,8 @@ export default (state = getMessages(20), action) => {
           ...allUserMessages,
           [newMessageNumber]: {
             number: newMessageNumber,
-            date: '2018-07-01',
-            time: '23:00',
             text: messageText,
-            isSenderMe: true,
-            isRead: true
+            isSenderMe: true
           }
         }
       }
