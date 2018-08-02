@@ -1,6 +1,7 @@
 import shortId from 'shortid';
 import faker from 'faker';
 import _ from 'lodash';
+
 const textGenerator = require('txtgen');
 
 const users = generateUsers(20);
@@ -20,7 +21,6 @@ export function generateUser() {
   return {
     userId: shortId.generate(),
     name: faker.name.findName(),
-    email: faker.internet.email(),
     profilePicture: faker.internet.avatar(),
     isOnline: faker.random.boolean()
   };
@@ -29,11 +29,8 @@ export function generateUser() {
 function generateMessage(number) {
   return {
     number,
-    date: '2018-07-01',
-    time: '23:00',
     text: textGenerator.sentence(),
-    isSenderMe: faker.random.boolean(),
-    isRead: false
+    isSenderMe: faker.random.boolean()
   };
 }
 
