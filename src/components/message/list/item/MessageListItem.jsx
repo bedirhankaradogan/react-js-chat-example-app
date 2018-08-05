@@ -25,8 +25,7 @@ export default class MessageListItem extends Component {
         'message-list-item-bubble-arrow-left': !isSenderMe,
       }
     );
-
-
+    
     return(
       <div className={'message-list-item box-sizing'}>
         <div className={bubbleClassName}>

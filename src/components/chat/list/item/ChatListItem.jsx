@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
-import {setActiveUserId} from '../../../../redux/actions';
-import store from '../../../../redux/store';
+import {setActiveUserId} from '../../../../redux/actions/index.js';
+import store from '../../../../redux/store/index.js';
 
 // Styles
 import './chat-list-item.scss';

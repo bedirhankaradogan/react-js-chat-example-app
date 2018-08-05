@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import {getMessages} from '../../data';
+import {getMessages} from '../../data/index.js';
 import {SEND_NEW_MESSAGE} from '../constants/ActionTypes.js';
 
 export default (state = getMessages(20), action) => {
