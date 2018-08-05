@@ -28,5 +28,11 @@ body {
 
 .page-content {
   position: relative;
-  width: calc(100% - 400px);
+  flex: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .page-left-bar {
+    width: 100px;
+  }
 }
