@@ -1,6 +1,6 @@
 # React.js Static Chat Example App
 
-A React.js project for chat.
+Static chat example application made with React.js and Redux.
 
 ### Installation
 
