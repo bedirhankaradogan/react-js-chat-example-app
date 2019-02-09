@@ -16,10 +16,10 @@ Static chat example application made with React.js and Redux.
 
 1. Project will be run on http://localhost:3000/. So make sure that you've done necessary settings for localhost usage.
 
-## Lıcence
+### Lıcence
 
 MIT ©
 
-## Support
+### Support
 
 [Support me on Patreon](https://www.patreon.com/bedirhankaradogan)
