@@ -19,7 +19,3 @@ Static chat example application made with React.js and Redux.
 ### Lıcence
 
 MIT ©
-
-### Support
-
-[Support me on Patreon](https://www.patreon.com/bedirhankaradogan)
